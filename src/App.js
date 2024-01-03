@@ -13,55 +13,29 @@ function App() {
   const [post,setpost] = useState([
     {
       "id": 1,
-      "title": "Introduction to JSON",
-      "body": "JSON (JavaScript Object Notation) is a lightweight data-interchange format..."
+      "title": "Understanding the Dangers",
+      "body": "Learn about the harmful effects of drug abuse on physical and mental health. Stay informed to make smart choices for a healthier life."
     },
     {
       "id": 2,
-      "title": "Getting Started with Python",
-      "body": "Python is a versatile programming language known for its readability and ease of use..."
+      "title": "Peer Support and Influence",
+      "body": "Explore the impact of peer pressure and how to resist it. Build a supportive network to encourage positive choices and discourage substance abuse."
     },
     {
       "id": 3,
-      "title": "Web Development Basics",
-      "body": "Understanding the fundamentals of HTML, CSS, and JavaScript is crucial for web development..."
+      "title": "Effective Communication",
+      "body": "Enhance your communication skills to express concerns and seek help. Open conversations play a crucial role in preventing and addressing drug-related issues."
     },
     {
       "id": 4,
-      "title": "Exploring Machine Learning Algorithms",
-      "body": "Machine learning involves the use of algorithms that allow computers to learn patterns from data..."
+      "title": "Recognizing Warning Signs",
+      "body": "Educate yourself on the warning signs of drug abuse in individuals. Early detection can lead to timely intervention and support for those in need."
     },
     {
       "id": 5,
-      "title": "The Art of Data Visualization",
-      "body": "Effective data visualization is essential for conveying complex information in a clear and concise manner..."
-    },
-    {
-      "id": 6,
-      "title": "Mobile App Development Trends",
-      "body": "Stay updated on the latest trends in mobile app development, from cross-platform frameworks to emerging technologies..."
-    },
-    {
-      "id": 7,
-      "title": "Cybersecurity Best Practices",
-      "body": "Protecting your digital assets requires implementing robust cybersecurity measures, including strong passwords and regular updates..."
-    },
-    {
-      "id": 8,
-      "title": "Healthy Living Tips",
-      "body": "Maintaining a healthy lifestyle involves a balanced diet, regular exercise, and sufficient sleep..."
-    },
-    {
-      "id": 9,
-      "title": "Space Exploration and Discoveries",
-      "body": "Discover the latest advancements in space exploration, from new exoplanet discoveries to cutting-edge space missions..."
-    },
-    {
-      "id": 10,
-      "title": "The Impact of Artificial Intelligence on Society",
-      "body": "Explore the ethical considerations and societal impact of artificial intelligence as it becomes increasingly integrated into our daily lives..."
+      "title": "Building Resilience",
+      "body": "Discover strategies to build resilience and cope with life's challenges without turning to substances. Resilient individuals are better equipped to resist the temptation of drugs."
     }
-  
   ])
   const [search,setsearch] = useState('')
   const [searchresults,setsearchresults] = useState([])
@@ -104,7 +78,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header name ="BLogFlow"/>
+      <Header name ="Prototype"/>
       <Navbar search={search} setsearch ={setsearch} />
         <Routes>
             <Route path="/" element={<Home post ={searchresults}/>}/>
